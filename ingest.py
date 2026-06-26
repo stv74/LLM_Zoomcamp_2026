@@ -1,4 +1,5 @@
-'''This script loads FAQ data from the datatalks.club API and builds a MinSearch index.
+'''
+This script loads FAQ data from the datatalks.club API and builds a MinSearch index.
 '''
 import requests
 from minsearch import Index

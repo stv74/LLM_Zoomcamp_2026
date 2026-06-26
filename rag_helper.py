@@ -76,6 +76,7 @@ class RAGBase:
         Call the LLM client with the prompt and return the output text.'''
         interaction = self.llm_client.interactions.create(
             model=self.model,
+            system_instruction=self.instructions,
             input=prompt
         )
         return interaction.output_text
